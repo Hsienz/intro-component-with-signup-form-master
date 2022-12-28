@@ -1,3 +1,10 @@
+const Input = (props : {placeholder:string} ) => {
+	return (
+		<div>
+			<input type="text" placeholder={props.placeholder} />
+		</div>
+	)
+}
 const Card = () => {
 	return (
 		<div className="flex flex-col text-center w-[320px] mx-8 my-16">
