@@ -1,13 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    input, button {
-        @apply w-full h-[3.25rem] block;
-    }
-    input {
-        @apply pl-6 outline-none border-2 border-solid border-Grayish_Blue rounded-md placeholder:text-Dark_Blue font-normal text-Dark_Blue;
-    }
+@layer components {
+	input,
+	button {
+		@apply w-full h-[3.25rem] block;
+	}
+	input {
+		@apply pl-6 pr-10 outline-none border-2 border-solid border-Grayish_Blue rounded-md placeholder:text-Dark_Blue font-normal text-Dark_Blue;
+	}
+	.error {
+		img {
+			@apply block;
+		}
+		p {
+			@apply visible;
+		}
+        input {
+            @apply border-Red
+        }
+	}
 }

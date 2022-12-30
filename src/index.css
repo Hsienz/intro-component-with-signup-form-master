@@ -3,10 +3,20 @@
 @tailwind components;
 @tailwind utilities;
 @layer components {
-  input, button {
+  input,
+button {
     @apply w-full h-[3.25rem] block;
   }
   input {
-    @apply pl-6 outline-none border-2 border-solid border-Grayish_Blue rounded-md placeholder:text-Dark_Blue font-normal text-Dark_Blue;
+    @apply pl-6 pr-10 outline-none border-2 border-solid border-Grayish_Blue rounded-md placeholder:text-Dark_Blue font-normal text-Dark_Blue;
+  }
+  .error img {
+    @apply block;
+  }
+  .error p {
+    @apply visible;
+  }
+  .error input {
+    @apply border-Red;
   }
 }/*# sourceMappingURL=index.css.map */
